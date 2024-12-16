@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/product.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/addtocart.css" />
+    <title>Quickierce | Product</title>
+  </head>
+  <body>
+    <header class="product_header">
+      <span class="header_logo"> Quickerce </span>
+
+      <div class="header_actions">
+        <span class="header_action">
+          Cart <span class="cart_count">0</span>
+        </span>
+      </div>
+    </header>
+    <div class="cart-container">
+      <h1>Your Cart</h1>
+      <div class="cart-items">
+        <div class="cart-item">
+          <div id="cart_image">
+            <img
+              id="cart_img"
+              src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+              alt="title"
+            />
+          </div>
+          <div class="item-details">
+            <h2 id="cart_title">Product Name</h2>
+            <p id="cart_price">$25.00</p>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <input type="number" id="result" value="1" min="1" />
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <button class="remove">Remove</button>
+        </div>
+      </div>
+      <div class="cart-total">
+        <p id="total_price">Total: $40.00</p>
+        <button class="checkout-btn" id="proceed">Proceed to Checkout</button>
+      </div>
+    </div>
+    <!-- Add fun Model -->
+    <div id="gifModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="https://media.giphy.com/media/3o6Zt9TPaoAMn9yyZa/giphy.gif"
+          alt="Funny GIF"
+        />
+      </div>
+    </div>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
+    "></script>
+    <script type="module" src="./scripts/common.js"></script>
+    <script type="module" src="./scripts/addcart.js"></script>
+    <script type="module" src="./scripts/funcontent.js"></script>
+  </body>
+</html>
